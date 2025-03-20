@@ -1,0 +1,9 @@
+{
+    "input_data": {
+      "columns": ["age", "job", "marital", "education", "default", "housing", "loan", "contact", "month", "duration", "campaign", "pdays", "previous", "poutcome", "emp.var.rate", "cons.price.idx", "cons.conf.idx", "euribor3m", "nr.employed"],
+      "data": [
+        [55, "unknown", "married", "unknown", "unknown", "yes", "no", "telephone", "may", 285, 2, 999, 0, "nonexistent", 1.1, 93.994, -36.4, 4.86, 5191]
+      ]
+    }
+  }
+  
