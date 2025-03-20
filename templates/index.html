@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure ML Model Deployment</title>
+</head>
+<body>
+    <h1>Azure ML Model Deployment with Flask</h1>
+    <form method="POST">
+        <label for="input_data">Enter input data in JSON format:</label><br>
+        <textarea name="input_data" rows="5" cols="50">{}</textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+    
+    {% if result %}
+        <h2>Prediction Result:</h2>
+        <pre>{{ result | tojson(indent=4) }}</pre>
+    {% endif %}
+    
+    {% if error %}
+        <h2 style="color: red;">Error:</h2>
+        <pre>{{ error }}</pre>
+    {% endif %}
+</body>
+</html>
